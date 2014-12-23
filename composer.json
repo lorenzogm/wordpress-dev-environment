@@ -1,0 +1,45 @@
+{
+	"name"        : "elegantdev/wordpress-dev-environment",
+	"description" : "VVV Auto Bootstrap",
+	"authors"     : [
+		{
+			"name"    : "Lorenzo GM",
+			"email"   : "dev@lorenzogm.com",
+			"homepage": "http://elegantdev.com/"
+		}
+	],
+	"type"        : "project",
+	"minimum-stability": "dev",
+	"repositories": [
+		{
+			"type": "composer",
+			"url" : "http://wpackagist.org"
+		}
+	],
+	"config"      : {
+		"vendor-dir":  "vendor"
+	},
+	"require"     : {
+		"johnpbloch/wordpress"                               : "4.1",
+		"wpackagist-plugin/akismet"                          : "*",
+		"wpackagist-plugin/codestyling-localization"         : "*",
+		"wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
+		"wpackagist-plugin/polylang"                         : "*",
+		"wpackagist-plugin/w3-total-cache"                   : "*",
+		"wpackagist-plugin/wordpress-importer"               : "*",
+		"wpackagist-plugin/wordpress-seo"                    : "*",
+		"wpackagist-plugin/wp-mail-smtp"                     : "*",
+		"wpackagist-plugin/wpremote"                         : "*",
+		"wpackagist-theme/twentyfourteen"                    : "*"
+	},
+	"require-dev" : {
+		"wpackagist-plugin/log-deprecated-notices"    : "*"
+	},
+	"extra"       : {
+		"wordpress-install-dir": "htdocs/wordpress",
+		"installer-paths": {
+			"htdocs/wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
+			"htdocs/wp-content/themes/{$name}/"  : ["type:wordpress-theme"]
+		}
+	}
+}

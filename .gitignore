@@ -1,0 +1,25 @@
+vendor
+
+# Ignore everything in "htdocs" except the "wp-content" directory.
+htdocs/*
+!htdocs/wp-content/
+!htdocs/.htaccess
+!htdocs/Movefile
+!htdocs/index.php
+!htdocs/sftp-config.json
+!htdocs/wp-config-sample.php
+!htdocs/wp-config.local.php
+!htdocs/wp-config.staging.php
+!htdocs/wp-config.production.php
+
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+htdocs/wp-content/*
+!htdocs/wp-content/plugins/
+!htdocs/wp-content/themes/
+
+# Ignore everything in the "plugins" directory, except the specified plugins
+htdocs/wp-content/plugins/*
+
+# Ignore everything in the "themes" directory, except the specified themes
+htdocs/wp-content/themes/*

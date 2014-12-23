@@ -1,0 +1,74 @@
+local:
+  vhost: "http://elegantdev.local"
+  wordpress_path: "/vagrant/www/elegantdev/htdocs/" # use an absolute path here
+
+  database:
+    name: "elegantdev"
+    user: "elegantdev"
+    password: "elegantdev"
+    host: "localhost"
+
+staging:
+  vhost: "http://staging.elegantdev.com"
+  wordpress_path: "/path/to/folder"
+
+  database:
+    name: "staging"
+    user: "staging"
+    password: "staging"
+    host: "localhost"
+
+  exclude:
+    - ".htaccess"
+    - ".git/"
+    - ".gitignore"
+    - ".sass-cache/"
+    - "bin/"
+    - "tmp/*"
+    - "Gemfile*"
+    - "Movefile"
+    - "wp-content/*.sql"
+    - "node_modules/"
+    - "package.json"
+    - "gulpfile.js"
+    - "README*"
+    - "sftp-config*"
+    - "codestyling-localization/.svn/"
+
+  ftp:
+    user: "elegantdev"
+    password: "elegantdev"
+    host: "elegantdev"
+    passive: true
+
+production:
+  vhost: "http://elegantdev.com"
+  wordpress_path: "/path/to/folder"
+
+  database:
+    name: "production"
+    user: "production"
+    password: "production"
+    host: "localhost"
+
+  exclude:
+    - ".git/"
+    - ".gitignore"
+    - ".sass-cache/"
+    - "bin/"
+    - "tmp/*"
+    - "Gemfile*"
+    - "Movefile"
+    - "wp-content/*.sql"
+    - "node_modules/"
+    - "package.json"
+    - "gulpfile.js"
+    - "README*"
+    - "sftp-config*"
+    - "codestyling-localization/.svn/"
+
+  ftp:
+    user: "elegantdev"
+    password: "elegantdev"
+    host: "elegantdev"
+    passive: true
