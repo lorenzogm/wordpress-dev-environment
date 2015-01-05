@@ -14,10 +14,11 @@ composer install --prefer-dist
 if [ ! -f htdocs/wp-config.php ]
 then
 	echo "Creating wp-config.php and installing WordPress"
-	wp core config --dbname="elegantdev" --dbuser=elegantdev --dbpass=elegantdev --dbhost="localhost"
+	wp core config --dbname="elegantdev" --dbuser=elegantdev --dbpass=elegantdev --dbhost="localhost" --extra-php <<PHP
+define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content/' );
+PHP
 	mv htdocs/wordpress/wp-config.php htdocs/
-	cp htdocs/wp-config-sample.php htdocs/wp-config.php
-	wp core install --url=elegantdev.local --title="elegantdev" --admin_user=admin --admin_password=admin --admin_email=dev@email.com
+	wp core install --url=elegantdev.local --title="elegantdev" --admin_user=admin --admin_password=admin --admin_email=admin@email.com
 	wp option update permalink_structure "/%year%/%monthnum%/%postname%/"
 fi
 
