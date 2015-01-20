@@ -1,11 +1,11 @@
 {
-	"name"        : "elegantdev/wordpress-dev-environment",
+	"name"        : "lorenzogm/wordpress-dev-environment",
 	"description" : "VVV Auto Bootstrap",
 	"authors"     : [
 		{
 			"name"    : "Lorenzo GM",
 			"email"   : "dev@lorenzogm.com",
-			"homepage": "http://elegantdev.com/"
+			"homepage": "http://lorenzogm.com/"
 		}
 	],
 	"type"        : "project",
@@ -30,7 +30,7 @@
 		"wpackagist-plugin/wordpress-seo"                    : "*",
 		"wpackagist-plugin/wp-mail-smtp"                     : "*",
 		"wpackagist-plugin/wpremote"                         : "*",
-		"wpackagist-theme/twentyfourteen"                    : "*"
+		"wpackagist-theme/twentyfifteen"                     : "*"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"    : "*"
