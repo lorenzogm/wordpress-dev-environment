@@ -6,7 +6,7 @@ define('DB_USER', 'elegantdev');
 define('DB_PASSWORD', 'elegantdev');
 define('DB_HOST', 'localhost');
 
-define('WP_SITEURL', 'http://elegantdev.local');
+define('WP_SITEURL', 'http://elegantdev.local/wordpress');
 
 // Local will always want debug on and caching off
 define( 'WP_DEBUG', true);
