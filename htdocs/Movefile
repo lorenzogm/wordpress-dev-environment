@@ -19,7 +19,7 @@ staging:
     host: "localhost"
 
   exclude:
-    - ".htaccess"
+    - ".svn/"
     - ".git/"
     - ".gitignore"
     - ".sass-cache/"
@@ -33,7 +33,6 @@ staging:
     - "gulpfile.js"
     - "README*"
     - "sftp-config*"
-    - "codestyling-localization/.svn/"
 
   ftp:
     user: "elegantdev"
@@ -52,6 +51,7 @@ production:
     host: "localhost"
 
   exclude:
+    - ".svn/"
     - ".git/"
     - ".gitignore"
     - ".sass-cache/"
@@ -65,7 +65,6 @@ production:
     - "gulpfile.js"
     - "README*"
     - "sftp-config*"
-    - "codestyling-localization/.svn/"
 
   ftp:
     user: "elegantdev"
