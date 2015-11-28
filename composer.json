@@ -9,7 +9,7 @@
 		}
 	],
 	"type"        : "project",
-	"minimum-stability": "dev",
+	"minimum-stability": "stable",
 	"repositories": [
 		{
 			"type": "composer",
@@ -20,20 +20,15 @@
 		"vendor-dir":  "vendor"
 	},
 	"require"     : {
-		"johnpbloch/wordpress"                               : "4.1",
+		"johnpbloch/wordpress"                               : "4.*",
 		"wpackagist-plugin/akismet"                          : "*",
 		"wpackagist-plugin/codestyling-localization"         : "*",
 		"wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
-		"wpackagist-plugin/polylang"                         : "*",
 		"wpackagist-plugin/w3-total-cache"                   : "*",
-		"wpackagist-plugin/wordpress-importer"               : "*",
 		"wpackagist-plugin/wordpress-seo"                    : "*",
-		"wpackagist-plugin/wp-mail-smtp"                     : "*",
-		"wpackagist-plugin/wpremote"                         : "*",
-		"wpackagist-theme/twentyfifteen"                     : "*"
+		"wpackagist-plugin/wp-mail-smtp"                     : "*"
 	},
 	"require-dev" : {
-		"wpackagist-plugin/log-deprecated-notices"    : "*"
 	},
 	"extra"       : {
 		"wordpress-install-dir": "htdocs/wordpress",
